@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Math Functions</title>
+  <style>
+    /* Using calc() */
+    .box {
+      width: calc(100% - 50px);
+      height: 200px;
+      background-color: lightblue;
+      margin: 20px auto;
+    }
+
+    /* Using min(), max(), and clamp() */
+    .text {
+      font-size: clamp(1rem, 2.5vw, 3rem); /* Min size 1rem, max 3rem */
+      color: darkblue;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .min-box {
+      width: min(200px, 50%);
+      background-color: lightcoral;
+      padding: 10px;
+    }
+
+    .max-box {
+      width: max(300px, 50%);
+      background-color: lightgreen;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <p class="text">This box width is calculated using calc().</p>
+  </div>
+
+  <div class="min-box">
+    <p>Min Function: Width is the smaller of 200px or 50%.</p>
+  </div>
+
+  <div class="max-box">
+    <p>Max Function: Width is the larger of 300px or 50%.</p>
+  </div>
+
+</body>
+</html>
